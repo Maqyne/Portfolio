@@ -1,0 +1,15 @@
+.hero {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(pink, 0.4),
+      rgba(yellow, 0.4)
+    ),
+    url("../images/website_hero.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "type 1.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass scss/main.scss css/main.css -w",
+    "start": "live-server"
+  },
+  "author": "Kyle Malinosky",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maqyne/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Maqyne/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Maqyne/Portfolio#readme"
+}
