@@ -1,0 +1,46 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  //   .home_wrap {
+
+  .tags {
+    color: lightgrey;
+    font-family: $script;
+    font-size: 18px;
+    vertical-align: middle;
+  }
+  .html_open {
+    position: absolute;
+    top: 2.5%;
+    left: 12.5%;
+  }
+  .body_open {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+  }
+
+  .intro_wrap {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    justify-content: center;
+
+    .intro {
+      color: white;
+      font-family: $serif;
+      font-size: 54px;
+    }
+  }
+
+  .body_close {
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+  }
+  .html_close {
+    position: absolute;
+    bottom: 2.5%;
+    left: 12.5%;
+  }
+}

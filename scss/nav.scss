@@ -1,18 +1,50 @@
 nav {
-  position: fixed;
+  position: absolute;
   z-index: 99;
-  width: 10%;
-  height: 92px;
-  margin: 0 auto;
+  height: 100%;
+  width: 100px;
+  background-color: $vDark;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  .link_wrap {
+  justify-content: center;
+  .nav_wrap {
+    height: 90%;
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    align-items: center;
+    justify-content: space-between;
+    .logo {
+      display: flex;
+      flex-direction: column;
+      a {
+        text-decoration: none;
+        color: $linkGrey;
+      }
+    }
+
+    .links {
+      height: 255px;
+      display: flex;
+      flex-direction: column;
+      // justify-content: left;
+
+      a {
+        text-decoration: none;
+        height: 51px;
+        color: $linkGrey;
+      }
+    }
+    .media_wrap {
+      height: 56px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      // justify-content: left;
+      a {
+        text-decoration: none;
+        color: $linkGrey;
+        height: 14px;
+      }
+    }
   }
 }

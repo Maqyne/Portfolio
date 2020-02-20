@@ -9,6 +9,7 @@ body,
 section {
   height: 100%;
   overflow: hidden;
+  background-color: #1d1d1d;
 }
 
 h1,
@@ -23,22 +24,50 @@ p {
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   z-index: 99;
-  width: 10%;
-  height: 92px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   height: 100%;
-}
-nav .link_wrap {
+  width: 100px;
+  background-color: #181818;
   display: flex;
   flex-direction: column;
-  justify-items: center;
   align-items: center;
+  justify-content: center;
+}
+nav .nav_wrap {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+nav .nav_wrap .logo {
+  display: flex;
+  flex-direction: column;
+}
+nav .nav_wrap .logo a {
+  text-decoration: none;
+  color: #4d4d4e;
+}
+nav .nav_wrap .links {
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+}
+nav .nav_wrap .links a {
+  text-decoration: none;
+  height: 51px;
+  color: #4d4d4e;
+}
+nav .nav_wrap .media_wrap {
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+nav .nav_wrap .media_wrap a {
+  text-decoration: none;
+  color: #4d4d4e;
+  height: 14px;
 }
 
 .hero {
@@ -46,8 +75,50 @@ nav .link_wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(to right, rgba(255, 192, 203, 0.4), rgba(255, 255, 0, 0.4)), url("../images/website_hero.png");
+  background-color: #1d1d1d;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+}
+.home .tags {
+  color: lightgrey;
+  font-family: "League Script", cursive;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.home .html_open {
+  position: absolute;
+  top: 2.5%;
+  left: 12.5%;
+}
+.home .body_open {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+}
+.home .intro_wrap {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  justify-content: center;
+}
+.home .intro_wrap .intro {
+  color: white;
+  font-family: "Lora", serif;
+  font-size: 54px;
+}
+.home .body_close {
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+}
+.home .html_close {
+  position: absolute;
+  bottom: 2.5%;
+  left: 12.5%;
 }
