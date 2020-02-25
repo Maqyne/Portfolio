@@ -9,7 +9,7 @@ body,
 section {
   height: 100%;
   overflow: hidden;
-  background-color: $mDark;
+  background-color: $body;
 }
 
 h1,
@@ -20,4 +20,21 @@ h5,
 h6,
 p {
   margin-block-end: 16px;
+}
+
+.btn {
+  width: fit-content;
+  white-space: nowrap;
+  color: $orange;
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-family: $sans;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid $orange;
+  font-weight: bold;
+  &:hover {
+    background-color: $orange;
+    color: $body;
+  }
 }

@@ -3,7 +3,7 @@ nav {
   z-index: 99;
   height: 100%;
   width: 100px;
-  background-color: $vDark;
+  background-color: $nav;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +18,7 @@ nav {
       flex-direction: column;
       a {
         text-decoration: none;
-        color: $linkGrey;
+        color: $white;
       }
     }
 
@@ -31,7 +31,10 @@ nav {
       a {
         text-decoration: none;
         height: 51px;
-        color: $linkGrey;
+        color: $white;
+        &:hover {
+          color: $orange;
+        }
       }
     }
     .media_wrap {
@@ -42,8 +45,11 @@ nav {
       // justify-content: left;
       a {
         text-decoration: none;
-        color: $linkGrey;
+        color: $white;
         height: 14px;
+        &:hover {
+          color: $orange;
+        }
       }
     }
   }
