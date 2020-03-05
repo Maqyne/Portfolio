@@ -1,19 +1,26 @@
-@charset "utf-8";
 * {
   margin: 0;
   padding-left: 0;
   box-sizing: border-box;
 }
 
-html, body, section {
+html,
+body,
+section {
   height: 100%;
   overflow: hidden;
   background-color: #2e3532;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   -webkit-margin-after: 16px;
-  margin-block-end: 16px;
+          margin-block-end: 16px;
 }
 
 .btn {
@@ -30,7 +37,6 @@ h1, h2, h3, h4, h5, h6, p {
   border: 1px solid #ffa630;
   font-weight: bold;
 }
-
 .btn:hover {
   background-color: #ffa630;
   color: #2e3532;
@@ -47,72 +53,48 @@ nav {
   align-items: center;
   justify-content: center;
 }
-
 nav .nav_wrap {
   height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-nav .nav_wrap .logo {
-  margin-left: -10px;
-}
-
 nav .nav_wrap .logo a {
   height: 90px;
   width: 90px;
-  position: absolute;
   text-decoration: none;
-  position: absolute;
-  font-size: 100px;
+  font-size: 50px;
   font-family: "Lato", sans-serif;
-  color: #ffa630;
+  color: #e0e2db;
+  background-image: url(../images/mandala.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-nav .nav_wrap .logo a img {
-  margin-left: -20px;
-  position: absolute;
-  height: 65px;
-  width: 65px;
-  animation: spin 152s linear infinite;
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 nav .nav_wrap .links {
   height: 255px;
   display: flex;
   flex-direction: column;
 }
-
 nav .nav_wrap .links a {
   text-decoration: none;
   height: 51px;
   color: #e0e2db;
 }
-
 nav .nav_wrap .links a:hover {
   color: #ffa630;
 }
-
 nav .nav_wrap .media_wrap {
   height: 56px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-
 nav .nav_wrap .media_wrap a {
   text-decoration: none;
   color: #e0e2db;
   height: 14px;
 }
-
 nav .nav_wrap .media_wrap a:hover {
   color: #ffa630;
 }
@@ -121,93 +103,79 @@ nav .nav_wrap .media_wrap a:hover {
   display: flex;
   flex-direction: row;
 }
-
 .home .home_wrap {
   width: 50%;
-  z-index: 99;
+  z-index: 90;
 }
-
 .home .home_wrap .tags {
   color: #7fb069;
   font-family: "League Script", cursive;
   font-size: 18px;
   vertical-align: middle;
 }
-
 .home .home_wrap .html_open {
   position: absolute;
   top: 2.5%;
   left: 7.5%;
 }
-
 .home .home_wrap .body_open {
   position: absolute;
   top: 5%;
   left: 10%;
 }
-
 .home .home_wrap .intro_wrap {
   position: absolute;
   top: 25%;
   left: 12.5%;
   justify-content: center;
 }
-
 .home .home_wrap .intro_wrap .intro_h {
   color: white;
   font-family: "Lora", serif;
   font-size: 54px;
 }
-
 .home .home_wrap .intro_wrap .intro_p {
   color: #aba9af;
   text-transform: capitalize;
   font-family: "Lato", sans-serif;
   font-size: 18px;
   -webkit-font-kerning: 10px;
-  font-kerning: 10px;
+          font-kerning: 10px;
 }
-
-.home .home_wrap .intro_wrap .intro_p .p_open, .home .home_wrap .intro_wrap .intro_p .p_close {
+.home .home_wrap .intro_wrap .intro_p .p_open,
+.home .home_wrap .intro_wrap .intro_p .p_close {
   text-transform: none;
 }
-
 .home .home_wrap .a_wrap {
   position: absolute;
   top: 65%;
   left: 12.5%;
   justify-content: center;
 }
-
 .home .home_wrap .a_wrap a {
   text-transform: uppercase;
 }
-
 .home .home_wrap .body_close {
   position: absolute;
   bottom: 5%;
   left: 10%;
 }
-
 .home .home_wrap .html_close {
   position: absolute;
   bottom: 2.5%;
   left: 7.5%;
 }
-
 .home .img_home {
-  display: flex;
-  justify-content: center;
-  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 5%;
   margin-right: 5%;
 }
-
 .home .img_home img {
   height: 100%;
   width: 100%;
   animation: spin 152s linear infinite;
 }
-
 @keyframes spin {
   100% {
     transform: rotate(360deg);
