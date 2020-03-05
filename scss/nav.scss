@@ -14,11 +14,45 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     .logo {
-      display: flex;
-      flex-direction: column;
+      margin-left: -10px;
+      // display: flex;
+      // flex-direction: row;
+      // margin: unset;
       a {
+        height: 90px;
+        width: 90px;
+        position: absolute;
         text-decoration: none;
-        color: $white;
+        position: absolute;
+        font-size: 100px;
+        font-family: $sans;
+        color: $orange;
+
+        img {
+          margin-left: -20px;
+          position: absolute;
+          height: 65px;
+          width: 65px;
+          -webkit-animation: spin 152s linear infinite;
+          -moz-animation: spin 152s linear infinite;
+          animation: spin 152s linear infinite;
+          @-moz-keyframes spin {
+            100% {
+              -moz-transform: rotate(360deg);
+            }
+          }
+          @-webkit-keyframes spin {
+            100% {
+              -webkit-transform: rotate(360deg);
+            }
+          }
+          @keyframes spin {
+            100% {
+              -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+            }
+          }
+        }
       }
     }
 
