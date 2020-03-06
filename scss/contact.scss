@@ -48,8 +48,23 @@
         margin-top: 25px;
         margin-left: 225px;
 
-        a {
+        input {
           text-transform: uppercase;
+          width: fit-content;
+          white-space: nowrap;
+          color: $orange;
+          font-size: 20px;
+          letter-spacing: 4px;
+          font-family: $sans;
+          text-decoration: none;
+          padding: 10px 18px;
+          background-color: $body;
+          border: 1px solid $orange;
+          font-weight: bold;
+          &:hover {
+            background-color: $orange;
+            color: $body;
+          }
         }
       }
     }

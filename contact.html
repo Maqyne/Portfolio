@@ -78,19 +78,19 @@
               &lt;form&gt;
             </span>
             <br />
-            <form action="#">
+            <form action="mailto:kp.webdesigndev@gmail.com" method="POST" enctype="text/plain">
                 <label for="name">Name:</label>&nbsp;&nbsp;
-                <input type="text" id="name" placeholder=" Your name...">
+                <input type="text" name="name" id="name" placeholder=" Your name...">
                 <br>
                 <br>
                 <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;
                 
-                <input type="email" id="email" placeholder=" Email...">
+                <input type="email" name="email" id="email" placeholder=" Email...">
                 <br>
                 <br>
                 <label for="telephone">Phone:</label>&nbsp; 
                 
-                <input type="text" id="number" placeholder=" (123) 456-7890">
+                <input type="text" name="telephone" id="number" placeholder=" (123) 456-7890">
                 <br>
                 <br>
                 <label for="message">Message:</label>
@@ -107,7 +107,7 @@
             <span class="tags a_open">
               &lt;a&gt;
             </span>
-            &nbsp;<a href="index.html" class="btn">send</a>&nbsp;
+            &nbsp;<input type="submit" value="Send" >&nbsp;
             <span class="tags a_open">
               &lt;a&gt;
             </span>
@@ -126,5 +126,6 @@
         <img src="images/mandala.png" alt="mandala" />
       </div>
     </section>
+    
   </body>
 </html>
