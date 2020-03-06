@@ -187,40 +187,43 @@ nav .nav_wrap .media_wrap a:hover {
   flex-direction: row;
 }
 .about .about_wrap {
-  width: 50%;
   z-index: 90;
 }
 .about .about_wrap .tags {
-  color: #aba9af;
+  color: #7fb069;
   font-family: "League Script", cursive;
   font-size: 18px;
   vertical-align: middle;
 }
 .about .about_wrap .html_open {
   position: absolute;
-  top: 2.5%;
-  left: 7.5%;
+  top: 25px;
+  left: 105px;
 }
 .about .about_wrap .body_open {
   position: absolute;
-  top: 5%;
-  left: 10%;
+  top: 50px;
+  left: 110px;
 }
 .about .about_wrap .intro_wrap {
   position: absolute;
-  top: 25%;
-  left: 12.5%;
+  height: 100%;
+  top: 20%;
+  left: 170.25px;
   justify-content: center;
+  margin-bottom: 125px;
 }
 .about .about_wrap .intro_wrap .intro_h {
-  color: #7fb069;
+  width: 513px;
+  color: #e0e2db;
   font-family: "Lora", serif;
   font-size: 54px;
 }
 .about .about_wrap .intro_wrap .intro_p {
-  color: #e0e2db;
+  color: #aba9af;
+  width: 513px;
   font-family: "Lato", sans-serif;
-  font-size: 23px;
+  font-size: 20px;
   -webkit-font-kerning: 10px;
           font-kerning: 10px;
 }
@@ -228,36 +231,32 @@ nav .nav_wrap .media_wrap a:hover {
 .about .about_wrap .intro_wrap .intro_p .p_close {
   text-transform: none;
 }
-.about .about_wrap .a_wrap {
-  position: absolute;
-  top: 65%;
-  left: 12.5%;
-  justify-content: center;
+.about .about_wrap .intro_wrap .a_wrap {
+  margin-top: 50px;
 }
-.about .about_wrap .a_wrap i {
+.about .about_wrap .intro_wrap .a_wrap i {
   font-size: 65px;
   color: #ffa630;
   padding: 0 50px;
 }
 .about .about_wrap .body_close {
   position: absolute;
-  bottom: 5%;
-  left: 10%;
+  bottom: 50px;
+  left: 110px;
 }
 .about .about_wrap .html_close {
   position: absolute;
-  bottom: 2.5%;
-  left: 7.5%;
+  bottom: 25px;
+  left: 105px;
 }
 .about .img_about {
-  display: flex;
-  justify-content: center;
-  margin-top: 150px;
-  width: 75%;
+  position: absolute;
+  margin-top: 134px;
+  left: 725px;
 }
 .about .img_about img {
-  height: 50%;
-  width: 50%;
+  height: 500px;
+  width: 500px;
   border-radius: 150px;
 }
 
@@ -382,8 +381,8 @@ nav .nav_wrap .media_wrap a:hover {
 .contact .img_home {
   position: absolute;
   left: 725px;
-  top: 36.5px;
-  margin-right: 5%;
+  top: 63.5px;
+  margin-right: 25px;
 }
 .contact .img_home img {
   height: 641px;
