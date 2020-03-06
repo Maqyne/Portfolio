@@ -3,10 +3,8 @@
   flex-direction: row;
 
   .contact_wrap {
-    width: 50%;
     z-index: 90;
-    // display: flex;
-    // flex-direction: column;
+
     .tags {
       color: $green;
       font-family: $script;
@@ -15,25 +13,25 @@
     }
     .html_open {
       position: absolute;
-      top: 2.5%;
-      left: 7.5%;
+      top: 25px;
+      left: 105px;
     }
     .body_open {
       position: absolute;
-      top: 5%;
-      left: 10%;
+      top: 50px;
+      left: 110px;
     }
 
     .intro_wrap {
       position: absolute;
-      top: 25%;
-      left: 15%;
+      top: 100px;
+      left: 170.25px;
       justify-content: center;
 
       .intro_h {
         color: $white;
         font-family: $serif;
-        font-size: 54px;
+        font-size: 45px;
       }
       .intro_p {
         color: $gray;
@@ -46,17 +44,25 @@
           text-transform: none;
         }
       }
+      .a_wrap {
+        margin-top: 25px;
+        margin-left: 225px;
+
+        a {
+          text-transform: uppercase;
+        }
+      }
     }
 
     .body_close {
       position: absolute;
-      bottom: 5%;
-      left: 10%;
+      bottom: 50px;
+      left: 110px;
     }
     .html_close {
       position: absolute;
-      bottom: 2.5%;
-      left: 7.5%;
+      bottom: 25px;
+      left: 105px;
     }
 
     label {
@@ -73,25 +79,16 @@
       width: 375px;
       height: 150px;
     }
-    .a_wrap {
-      position: absolute;
-      top: 80%;
-      left: 35%;
-      justify-content: center;
-      a {
-        text-transform: uppercase;
-      }
-    }
   }
   .img_home {
     position: absolute;
-    left: 50%;
-    top: 5%;
+    left: 725px;
+    top: 36.5px;
 
     margin-right: 5%;
     img {
-      height: 100%;
-      width: 100%;
+      height: 641px;
+      width: 641px;
       -webkit-animation: spin 152s linear infinite;
       -moz-animation: spin 152s linear infinite;
       animation: spin 152s linear infinite;
