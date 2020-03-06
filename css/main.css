@@ -172,7 +172,7 @@ nav .nav_wrap .media_wrap a:hover {
   margin-right: 25px;
 }
 .home .img_home img {
-  height: 641px;
+  height: 641;
   width: 641px;
   animation: spin 152s linear infinite;
 }
@@ -263,41 +263,87 @@ nav .nav_wrap .media_wrap a:hover {
 .projects {
   display: flex;
   flex-direction: row;
+  overflow: auto;
   width: 100%;
 }
-.projects .preview_wrapper {
-  margin-top: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  margin-left: 100px;
+.projects .projects_wrap {
+  z-index: 90;
 }
-.projects .preview_wrapper .img_preview {
-  width: 500px;
-  height: 400px;
-  background-color: #aba9af;
+.projects .projects_wrap .tags {
+  color: #7fb069;
+  font-family: "League Script", cursive;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.projects .projects_wrap .html_open {
+  position: absolute;
+  top: 25px;
+  left: 105px;
+}
+.projects .projects_wrap .body_open {
+  position: absolute;
+  top: 50px;
+  left: 110px;
+}
+.projects .projects_wrap .preview_wrapper {
+  position: relative;
+  width: 100%;
+  left: 377px;
+  top: 75px;
+}
+.projects .projects_wrap .preview_wrapper .img_preview {
+  position: relative;
+  width: 812px;
+  height: 375px;
   text-align: center;
+  margin-bottom: 50px;
 }
-.projects .preview_wrapper .img_preview a {
+.projects .projects_wrap .preview_wrapper .img_preview a {
   text-decoration: none;
 }
-.projects .preview_wrapper .img_preview a img {
-  height: 250px;
-  width: 500px;
+.projects .projects_wrap .preview_wrapper .img_preview a img {
+  height: 375px;
+  width: 812px;
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
-.projects .preview_wrapper .img_preview a h1 {
+.projects .projects_wrap .preview_wrapper .img_preview a .tag {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.projects .projects_wrap .preview_wrapper .img_preview:hover {
+  background-color: #e0e2db;
+}
+.projects .projects_wrap .preview_wrapper .img_preview:hover img {
+  opacity: 0.3;
+}
+.projects .projects_wrap .preview_wrapper .img_preview:hover .tag {
+  opacity: 1;
+}
+.projects .projects_wrap .preview_wrapper .img_preview:hover .text {
+  background-color: #7fb069;
+  color: #e0e2db;
   font-family: "Lora", serif;
-  padding-top: 50px;
-  color: #2e3532;
+  font-size: 40px;
+  padding: 16px 32px;
 }
-.projects .preview_wrapper .img_preview:hover {
-  background-color: #2e3532;
+.projects .projects_wrap .body_close {
+  position: absolute;
+  bottom: 50px;
+  left: 110px;
 }
-.projects .preview_wrapper .img_preview:hover h1 {
-  color: #ffa630;
+.projects .projects_wrap .html_close {
+  position: absolute;
+  bottom: 25px;
+  left: 105px;
 }
 
 .contact {
